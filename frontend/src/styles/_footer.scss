@@ -1,0 +1,14 @@
+footer {
+    color: $text-color-light;
+    background-color: $primary-color-dark;
+    padding: 16px 0 0;
+    text-align: center;
+
+    .footer-logo{
+        width: 50px;
+    }
+
+    .copyright{
+        font-size: 1rem;
+    }
+}

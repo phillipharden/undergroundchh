@@ -1,0 +1,179 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    .nav-container {
+        background-color: $primary-color;
+        color: $primary-color-light;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        transition: top 0.3s;
+        position: fixed;
+        top: 0;
+        padding: 0 10px;
+        height: 70px;
+
+        @include lg {
+            height: 80px;
+
+        }
+
+        .logo-container {
+            display: flex;
+            width: 300px;
+
+
+            // .brand-name {
+            //     display: none !important;
+            //     font-weight: 600;
+            //     font-size: 5vw;
+
+            //     @include breakpoint(240px) {
+            //         font-size: 2rem;
+            //     }
+
+            //     @include lg {
+            //         font-size: 2.6rem;
+            //     }
+            // }
+
+            .logo {
+                width: 40px;
+                margin-top: 5px;
+
+                @include lg {
+                    width: 55px;
+                    margin-top: 5px;
+                }
+
+                
+
+            }
+        }
+
+        .nav-list {
+            background-color: rgba(0, 132, 180, 0.9);
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;   
+
+            @include lg {
+                margin-top: 0px;
+                gap: 60px;
+                background-color: $primary-color;
+            }
+
+            @include md {
+                font-size: 1.6rem;
+            }
+
+            li {
+                width: 100px;
+                text-align: center;
+                border-radius: 25px;
+                padding: 5px;
+                transition: all 0.8s ease;
+                &:hover {
+                    background-color: $primary-color-light;
+                    span {
+                        color: $primary-color-medium;
+                        // transition: all 0.4s ease;
+                    }
+                } 
+            }
+        }
+
+        .hamburger {
+            @include lg {
+                width: 300px;
+            }
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        background-color: $primary-color-light;
+        width: 20px;
+        height: 3px;
+        display: block;
+        margin: 5px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        gap: 0;
+        top: 40px;
+        left: -100%;
+        text-align: start;
+        width: 100%;
+        transition: 0.7s ease-in-out;
+        background-color: $primary-color;
+        padding: 10px;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list li {
+        margin: 16px 0;
+    }
+}
+
+.test {
+    @include xs {
+        // 0px
+        color: red;
+    }
+
+    @include sm {
+        // 480px
+        color: blue;
+    }
+
+    @include md {
+        // 720px
+        color: green;
+    }
+
+    @include lg {
+        // 960px
+        color: orange;
+    }
+
+    @include xl {
+        // 1200px
+        color: yellow;
+    }
+}

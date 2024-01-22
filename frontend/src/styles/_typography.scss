@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $text-color-dark;
+    cursor: default;
+}
+
+h1, h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+// h2 {
+//     font-size: 1.9rem;
+
+//     @media (min-width: 640px) {
+//         font-size: 2.2rem;
+//     }
+//     @media (min-width: 1280px) {
+//         font-size: 2.5rem;
+//     }
+// }
+
+h3 {
+
+        font-size: 2.2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+
+}
+
+p {
+    font-family: $main-font;
+}
+
+
+
+
+
+body {
+    font: 1.6rem/1.4 $main-font;
+    color: $text-color-dark;
+}
+
+.brand-font {
+    font-family: $brand-font;
+    font-size: 3rem;
+}
+
+// .test {
+//     @include xs { // 0px
+//         color: red;
+//     }
+//     @include sm { // 480px
+//         color: blue;
+//     }
+//     @include md { // 720px
+//         color: green;
+//     }
+//     @include lg { // 960px
+//         color: orange;
+//     }
+//     @include xl { //1200px
+//         color: yellow;
+//     }
+// }

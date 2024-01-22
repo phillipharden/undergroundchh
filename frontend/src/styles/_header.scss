@@ -1,0 +1,45 @@
+header {
+    color: $text-color-light;
+    background-color: $primary-color-dark;
+
+    .header-top {
+        padding: 4px 0;
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            text-transform: uppercase;
+        }
+    }
+
+    nav {
+
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            padding: 8px 0 ;
+
+
+            .header-logo-img {
+                width: 100px;
+            }
+
+        }
+       
+    }
+
+    .header-social-media{
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+
+        // .header-social-media-links{
+        //     max-width: 300px;
+        // }
+        
+    }
+
+
+
+
+}

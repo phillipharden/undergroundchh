@@ -1,0 +1,39 @@
+$primary-color-dark:   #262322; 
+$primary-color:        #B31312; 
+$primary-color-medium: #008BF8;
+$primary-color-light:  #E6E1C5; 
+$primary-color-bright: #FFF275;
+
+$bg-color: #F9F6EE;
+$bg-color-secondary: #EDEADE;
+
+$text-color-dark:   #212121;
+$text-color-light: #EBEBEB;
+
+$accent-color:         #EAB464; 
+$shadow-color:         #151828; 
+$error-color:          #FF0000; 
+
+
+
+// $main-font:  'Ubuntu', sans-serif;
+$mont-font: 'Montserrat', sans-serif;
+$header-font: 'Oswald', sans-serif;
+$main-font:  'Balthazar', serif;
+$brand-font: 'Shadows Into Light', cursive;
+$accent-font: 'Caprasimo', cursive;
+$spacing: 15px;
+$border-width: 1px;
+// $brand-font: 'Shadows Into Light', cursive;
+$animate-time: 0.5s;
+$animate-time-delay: 0.8s;
+$animate-time-delay-extra: 1s;
+
+
+/* SPACING  */
+/* 1em = 16px */
+//^ BREAKPOINTS
+$spacing-sm: 37.5em;
+$spacing-md: 48em;
+$spacing-lg: 64em;
+$spacing-xl: 75em;
