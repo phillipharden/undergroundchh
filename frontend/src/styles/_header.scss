@@ -1,9 +1,9 @@
 header {
     color: $text-color-light;
-    background-color: $primary-color-dark;
 
     .header-top {
-        padding: 4px 0;
+        background-color: $primary-color-dark;
+        padding: 8px 0;
         ul {
             display: flex;
             justify-content: center;
@@ -13,6 +13,7 @@ header {
     }
 
     nav {
+        background-color: $primary-color-dark;
 
         .logo-container{
             display: flex;

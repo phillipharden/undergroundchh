@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Logo from '../assets/brand-images/u.png';
-import SocialMedia from './SocialMediaLinks.js';
-import DonationsButton from './DonationsButton.js';
+import React, { useState } from "react";
+import Logo from "../assets/brand-images/u.png";
+import SocialMedia from "./SocialMediaLinks.js";
+import DonationsButton from "./DonationsButton.js";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -107,7 +107,7 @@ function Header() {
         <span className="bar"></span>
       </div> */}
       </nav>
-      <div className="header-social-media">
+      <div className="header-social-media app-container">
         <SocialMedia className="header-social-media-links" />
       </div>
     </header>
